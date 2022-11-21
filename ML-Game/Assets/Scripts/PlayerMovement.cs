@@ -15,7 +15,7 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
-        rb.velocity = new Vector2(5, rb.velocity.y);
+        /*rb.velocity = new Vector2(5, rb.velocity.y);*/
        
 
         if (Input.GetKeyDown(KeyCode.Space))
