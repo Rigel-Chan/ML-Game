@@ -6,6 +6,8 @@ public class PlayerMovement : MonoBehaviour
 {
     Rigidbody2D rb;
     public float jumpForce = 5.0f;
+    public int points;
+
 
     void Start()
     {
@@ -24,5 +26,16 @@ public class PlayerMovement : MonoBehaviour
             rb.AddForce(new Vector2(rb.velocity.x, jumpForce), ForceMode2D.Impulse);
         }
     }
+
+
+    public void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Points"))
+        {
+            Debug.Log("dsadsads");
+            points++;
+        }
+    }
+
 
 }

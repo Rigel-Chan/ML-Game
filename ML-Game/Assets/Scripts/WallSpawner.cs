@@ -5,7 +5,8 @@ using UnityEngine;
 public class WallSpawner : MonoBehaviour
 {
     public GameObject wall;
-    int counter = 0;
+    public bool playerDead = false;
+
     void Start()
     {
         StartCoroutine(SpawnWall());
@@ -19,12 +20,12 @@ public class WallSpawner : MonoBehaviour
 
     IEnumerator SpawnWall()
     {
-        while(counter <10)
+        while(!playerDead)
         {
-            Instantiate(wall, new Vector2(this.gameObject.transform.position.x, this.gameObject.transform.position.y), Quaternion.identity);
+            Instantiate(wall, new Vector2(this.gameObject.transform.position.x, this.gameObject.transform.position.y+Random.Range(-3f,3.5f)), Quaternion.identity);
 
             yield return new WaitForSeconds(2f);
-            counter++;
+
         }
 
 

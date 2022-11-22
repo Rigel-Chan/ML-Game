@@ -9,6 +9,7 @@ public class WallMove : MonoBehaviour
     {
         rb = this.gameObject.GetComponent<Rigidbody2D>();
         rb.velocity = new Vector2(-5, rb.velocity.y);
+
     }
 
     // Update is called once per frame
