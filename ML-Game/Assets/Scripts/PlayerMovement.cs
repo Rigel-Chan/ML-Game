@@ -7,7 +7,7 @@ public class PlayerMovement : MonoBehaviour
     Rigidbody2D rb;
     public float jumpForce = 5.0f;
     public int points;
-
+    public bool alive = true;
 
     void Start()
     {
@@ -20,7 +20,7 @@ public class PlayerMovement : MonoBehaviour
         /*rb.velocity = new Vector2(5, rb.velocity.y);*/
        
 
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space) && alive)
         {
             rb.velocity = new Vector2(rb.velocity.x, 0);
             rb.AddForce(new Vector2(rb.velocity.x, jumpForce), ForceMode2D.Impulse);
@@ -34,6 +34,11 @@ public class PlayerMovement : MonoBehaviour
         {
             Debug.Log("dsadsads");
             points++;
+        }
+
+        if(collision.CompareTag("Wall"))
+        {
+            alive = false;
         }
     }
 
