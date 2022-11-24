@@ -22,9 +22,9 @@ public class WallSpawner : MonoBehaviour
     {
         while(!playerDead)
         {
-            Instantiate(wall, new Vector2(this.gameObject.transform.position.x, this.gameObject.transform.position.y+Random.Range(-3f,3.5f)), Quaternion.identity);
+            Instantiate(wall, new Vector2(this.gameObject.transform.position.x, this.gameObject.transform.position.y+Random.Range(-2.9f,3.2f)), Quaternion.identity);
 
-            yield return new WaitForSeconds(2f);
+            yield return new WaitForSeconds(1.8f);
 
         }
 

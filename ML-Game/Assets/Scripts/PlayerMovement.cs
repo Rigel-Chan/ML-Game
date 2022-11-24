@@ -8,7 +8,7 @@ public class PlayerMovement : MonoBehaviour
     public float jumpForce = 5.0f;
     public int points;
     public bool alive = true;
-
+    public Animator animator;
     void Start()
     {
         rb = this.GetComponent<Rigidbody2D>();
@@ -24,6 +24,7 @@ public class PlayerMovement : MonoBehaviour
         {
             rb.velocity = new Vector2(rb.velocity.x, 0);
             rb.AddForce(new Vector2(rb.velocity.x, jumpForce), ForceMode2D.Impulse);
+            animator.SetTrigger("Flap");
         }
     }
 
