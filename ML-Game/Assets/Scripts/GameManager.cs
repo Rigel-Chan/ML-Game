@@ -3,12 +3,17 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+
 public class GameManager : MonoBehaviour
 {
     public GameObject player;
     public GameObject deathWindow;
-    public GameObject Spawner;
-    public GameObject Stand;
+
+
+    bool mute = false;
+    public AudioSource music;
+
+
 
     void Start()
     {
@@ -28,6 +33,31 @@ public class GameManager : MonoBehaviour
     public void ResetGame()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+
+    }
+    public void MainMenu()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex-1);
+
+    }
+
+    public void QuitGame()
+    {
+        Application.Quit();
+    }
+
+
+    public void MuteMusic()
+    {
+        mute = !mute;
+        if (mute)
+        {
+            music.volume = 0;
+        }
+        else
+        {
+            music.volume = 0.2f;
+        }
 
     }
 

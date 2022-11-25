@@ -9,6 +9,12 @@ public class PlayerMovement : MonoBehaviour
     public int points;
     public bool alive = true;
     public Animator animator;
+    public AudioSource flap;
+    public AudioSource die;
+    public AudioSource score;
+    public LeaderBoard lb;
+
+
     void Start()
     {
         rb = this.GetComponent<Rigidbody2D>();
@@ -24,6 +30,7 @@ public class PlayerMovement : MonoBehaviour
         {
             rb.velocity = new Vector2(rb.velocity.x, 0);
             rb.AddForce(new Vector2(rb.velocity.x, jumpForce), ForceMode2D.Impulse);
+            flap.Play();
             animator.SetTrigger("Flap");
         }
     }
@@ -33,13 +40,17 @@ public class PlayerMovement : MonoBehaviour
     {
         if (collision.CompareTag("Points"))
         {
-            Debug.Log("dsadsads");
+            
             points++;
+            score.Play();
         }
 
-        if(collision.CompareTag("Wall"))
+        if(collision.CompareTag("Wall") && alive)
         {
             alive = false;
+            StartCoroutine(lb.SubmitScoreRoutine(points));
+            die.Play();
+
         }
     }
 
