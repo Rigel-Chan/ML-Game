@@ -5,16 +5,19 @@ using UnityEngine;
 public class WallMove : MonoBehaviour
 {
     Rigidbody2D rb;
+
     void Start()
     {
         rb = this.gameObject.GetComponent<Rigidbody2D>();
         rb.velocity = new Vector2(-5, rb.velocity.y);
-
+        StartCoroutine(WallDestroy());
     }
 
-    // Update is called once per frame
-    void Update()
+    IEnumerator WallDestroy()
     {
-        
+
+        yield return new WaitForSeconds(7f);
+        Destroy(this.gameObject);
+
     }
 }

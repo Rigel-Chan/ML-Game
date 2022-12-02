@@ -8,7 +8,8 @@ public class PlayerUI : MonoBehaviour
     public TextMeshProUGUI score;
     void Update()
     {
-        score.text = player.GetComponent<PlayerMovement>().points.ToString();
+        /*score.text = player.GetComponent<PlayerMovement>().points.ToString();*/
+        score.text = player.GetComponent<MLAgentPlayer>().points.ToString();
     }
 
 }

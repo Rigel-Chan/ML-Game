@@ -18,7 +18,7 @@ public class WallSpawner : MonoBehaviour
         
     }
 
-    IEnumerator SpawnWall()
+    public IEnumerator SpawnWall()
     {
         while(!playerDead)
         {

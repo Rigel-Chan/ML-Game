@@ -1,0 +1,29 @@
+{
+    "PrototypeModel": {
+        "checkpoints": [
+            {
+                "steps": 35426,
+                "file_path": "results\\MLPrototype\\PrototypeModel\\PrototypeModel-35426.onnx",
+                "reward": null,
+                "creation_time": 1669958900.7207818,
+                "auxillary_file_paths": [
+                    "results\\MLPrototype\\PrototypeModel\\PrototypeModel-35426.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 35426,
+            "file_path": "results\\MLPrototype\\PrototypeModel.onnx",
+            "reward": null,
+            "creation_time": 1669958900.7207818,
+            "auxillary_file_paths": [
+                "results\\MLPrototype\\PrototypeModel\\PrototypeModel-35426.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.30.0",
+        "torch_version": "1.13.0+cu117"
+    }
+}

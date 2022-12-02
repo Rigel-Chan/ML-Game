@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 679048699654402581}
   - component: {fileID: 5003740025741986644}
   - component: {fileID: 3782595164675125506}
+  - component: {fileID: 3196415048818358713}
   m_Layer: 0
   m_Name: Square (4)
   m_TagString: Wall
@@ -144,6 +145,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03b1b661124b93a4a901c1541bc528ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &3196415048818358713
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 884812133419775942}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0bff5449bc88de6419e80ca33ebe221b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &954944670687192086
 GameObject:
   m_ObjectHideFlags: 0
@@ -157,6 +170,7 @@ GameObject:
   - component: {fileID: 1937313604808688560}
   - component: {fileID: 6865794303718974201}
   - component: {fileID: 8874127260622707277}
+  - component: {fileID: 7390042077130633928}
   m_Layer: 0
   m_Name: Square (3)
   m_TagString: Wall
@@ -288,6 +302,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03b1b661124b93a4a901c1541bc528ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &7390042077130633928
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 954944670687192086}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0bff5449bc88de6419e80ca33ebe221b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6648403241474940380
 GameObject:
   m_ObjectHideFlags: 0
@@ -302,7 +328,7 @@ GameObject:
   - component: {fileID: 788173321020909334}
   m_Layer: 0
   m_Name: Wall
-  m_TagString: Untagged
+  m_TagString: WallObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -381,6 +407,7 @@ GameObject:
   - component: {fileID: 6040383944018777419}
   - component: {fileID: 4100307501788281853}
   - component: {fileID: 6486434428610657031}
+  - component: {fileID: 5243099231812347803}
   - component: {fileID: 7489183426489080164}
   m_Layer: 6
   m_Name: Square
@@ -490,6 +517,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 03b1b661124b93a4a901c1541bc528ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &5243099231812347803
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8814933111004013234}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c380ca33519847c4cad5a38a791515f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!50 &7489183426489080164

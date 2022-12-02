@@ -14,10 +14,13 @@ public class StandScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Space))
+        if(Input.GetKeyDown(KeyCode.Space) && this.gameObject.activeSelf)
         {
-            rb.constraints = RigidbodyConstraints2D.None;
+/*            rb.constraints = RigidbodyConstraints2D.None;*/
+            this.gameObject.SetActive(false);
             spawner.SetActive(true);
+            
         }
+
     }
 }

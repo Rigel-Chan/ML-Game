@@ -1,0 +1,38 @@
+{
+    "MLGameTest1": {
+        "checkpoints": [
+            {
+                "steps": 499962,
+                "file_path": "results\\ppo\\MLGameTest1\\MLGameTest1-499962.onnx",
+                "reward": 1.5714285714285714,
+                "creation_time": 1669940982.1807098,
+                "auxillary_file_paths": [
+                    "results\\ppo\\MLGameTest1\\MLGameTest1-499962.pt"
+                ]
+            },
+            {
+                "steps": 500026,
+                "file_path": "results\\ppo\\MLGameTest1\\MLGameTest1-500026.onnx",
+                "reward": 1.5714285714285714,
+                "creation_time": 1669940982.2303104,
+                "auxillary_file_paths": [
+                    "results\\ppo\\MLGameTest1\\MLGameTest1-500026.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 500026,
+            "file_path": "results\\ppo\\MLGameTest1.onnx",
+            "reward": 1.5714285714285714,
+            "creation_time": 1669940982.2303104,
+            "auxillary_file_paths": [
+                "results\\ppo\\MLGameTest1\\MLGameTest1-500026.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.30.0",
+        "torch_version": "1.13.0+cu117"
+    }
+}

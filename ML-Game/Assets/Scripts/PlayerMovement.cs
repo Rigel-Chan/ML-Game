@@ -18,7 +18,7 @@ public class PlayerMovement : MonoBehaviour
     void Start()
     {
         rb = this.GetComponent<Rigidbody2D>();
-
+       
     }
 
     void Update()
@@ -26,8 +26,9 @@ public class PlayerMovement : MonoBehaviour
         /*rb.velocity = new Vector2(5, rb.velocity.y);*/
        
 
-        if (Input.GetKeyDown(KeyCode.Space) && alive)
+        if (Input.GetKeyDown(KeyCode.Space))
         {
+
             rb.velocity = new Vector2(rb.velocity.x, 0);
             rb.AddForce(new Vector2(rb.velocity.x, jumpForce), ForceMode2D.Impulse);
             flap.Play();
